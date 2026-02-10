@@ -1,0 +1,66 @@
+Tools & Softwares
+=================
+1. NodeJS
+   https://nodejs.org/en/download
+   
+2. VSCode ( Editor )
+   https://code.visualstudio.com/Download
+
+
+
+Emmet / Shortcuts
+==================
+https://docs.emmet.io/cheat-sheet/
+
+
+!    HTML-5  Code 
+ol>li*5{Car-$}
+select>option*200{Country-$}
+
+
+
+FrontEnd
+========
+HTML - Content of a webpage 
+CSS -  For Styling
+Bootstrap - Pre Defined CSS classes
+Javascript -  Behaviour of a webpage
+Angular/React - Rapid Application development
+
+
+Flipkart Product
+================
+1. create an HTML File Add Content to it
+2. install vscode extension (open in browser)
+3. alt+b (to open html file in browser)
+
+
+HTML
+====
+Content
+
+
+CSS
+===
+1. inline CSS    (Style attribute)
+2. internal CSS  (<style></style>)
+3. External CSS  (.css file)
+
+
+
+Bootstrap
+========
+-CSS Library (Twitter)
+Bootstrap-3 , Bootstrap-4 , Bootstrap-5 (latest)
+-Use Bootstrap CDN link in our HTML file
+-Bootstrap official wesite: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+-CSS CDN LInk : https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+
+Javascript
+===========
+internal     <script></script>
+external     .js file
+

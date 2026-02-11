@@ -1,0 +1,25 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`a:${a} b:${b} c:${c}`);
+
+    a = 15;
+    b = 25;
+    // c = 35; // Assignment to constant variable
+    console.log(`a:${a} b:${b} c:${c}`);
+
+
+    // Const and non-primitive values
+    const cars = ['Tata', 'Honda'];
+    cars.push('Maruti');
+    delete cars[1];
+    console.log(cars); // ['Tata', empty, 'Maruti']
+
+    // const cannt make an object immutable
+    const user = { name: 'sanjay', age: 50 }
+    user.address = 'Bangalore'; // add a new field - yes
+    delete user.name;
+    user.age = 60;
+    console.log(user)
+</script>

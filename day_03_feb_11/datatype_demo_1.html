@@ -1,0 +1,20 @@
+<script>
+    // Primitives are immutable , non-primitives are mutable
+    let str = 'JavaScript';
+    str[0] = 'H';
+    str[1] = 'b';
+    console.log(str); // immutable
+
+    let arr = [10, 20, 30, 40, 50]
+    arr[0] = 15;
+    arr[1] = 25;
+    console.log(arr); // mutable
+
+
+    // Primitives are compared by value, non-primitves are compared by address
+    console.log(10 == 10); // true
+    console.log('Hello' == 'Hello'); // true
+
+    console.log( {} == {} ); // false
+    console.log( [10,20] == [10,20] ); // false
+</script>

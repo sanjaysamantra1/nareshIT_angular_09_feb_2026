@@ -1,0 +1,71 @@
+Datatypes 
+=========
+-Type of data we are dealing with
+
+
+Primitive  :   number, string, boolean , undefined, bigint, symbol
+non-primitive : object  {}  []
+
+boolean : true and false are possible values
+object  : {}  and [] are the possible values
+
+Note: typeof operator is used to identify datatype of a value
+
+
+primitve vs non-primitives
+==========================
+-Primitives are immutable , non-primitives are mutable
+-Primitives are compared by value, non-primitves are compared by address
+
+
+undefined vs null
+==================
+-when a variable is declared without any value, javscript assigns 'undefined' value 
+-null is an intentional value assigned by developers
+-typeof undefined is 'undefined' , typeof null is 'object'
+
+
+
+Variables
+=========
+-A variable is a container to store data in memory.
+ex: let name = 'Sanjay' 
+    name  --> variable  , 'sanjay' ---> value stored in it
+
+-Javascript provides 3 keywords to declare variables: 
+    1. var
+    2. let
+    3. const
+
+
+    var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+N:p - All variables (var,let,const) are hoisted but only 'var' variables are usable/reachable before initialization.
+-let/const variables are not reachable/usable before initialization (Temporal Dead Zone)
+
+
+
+Javascript : Programming Language, Follows ECMAScript standards
+ECMA : European Computer Menufecturer Association
+ECMAScript : Set of Rules and standards
+
+<2015    ES_5
+2015     ES_6   ( let, const, class, extends, module , REST, spread)
+2016     ES_7
+2017     ES_8
+2018     ES_9
+2019     ES_10
+2020     ES_11
+2021     ES_12
+2022     ES_13
+2023     ES_14
+2024     ES_15
+2025     ES_16

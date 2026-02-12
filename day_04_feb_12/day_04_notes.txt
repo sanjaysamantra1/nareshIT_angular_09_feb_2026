@@ -1,0 +1,45 @@
+    Var                         let                       const
+=================================================================
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+
+
+Variables Scope
+================
+1. Global : variables declared outside the functions
+2. Function : variables declared inside a function, only visible to that function
+3. Block : variables declared inside a block, only visible to that block
+
+
+Strict Mode
+===========
+'use strict'
+-variables cann't be declared without var/let/const in strict mode
+-Duplicate parameter name not allowed
+
+
+
+How Javascript Works
+====================
+-when javascript code is executed, 1 Global Execution Context(anonymous) is added to callstack.
+-For each function call, Function Execution Context(f1,f2) is added to callstack.
+-Every Execution context has 2 phases
+    1. Memory Creation (memory is created for variables,functions & 'undefined' is assigned for 'var' variables)
+    2. Code Execution ( code gets executed line by line, variables get their actual value)
+
+
+Hoisting
+========
+-'var' variables can be accessed before the actual value initialization, hoisting.
+-memory is created for all variables & 'undefined' is assigned for 'var' variables.
+
+
+Temporal Dead Zone
+==================
+-During memory Creation, even though memory is created for all variables & 'undefined' is assigned for 'var' variables.
+-let & const variables will be present in memory without any value,
+    b: <value unavailable>
+    c: <value unavailable>
+-when we see variables present in memory, but we cannt use them , they are in temporal dead Zone
+-we can use let & const variables only after actual value initialization

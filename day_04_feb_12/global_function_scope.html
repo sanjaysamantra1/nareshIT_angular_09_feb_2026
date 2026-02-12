@@ -1,0 +1,34 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`GLobal Scope:    a:${a} b:${b} c:${c}`);
+
+    function f1() {
+        var d = 40;
+        f = 60;     // global
+        console.log('f1 starts...')
+        console.log(`a: ${a}`)
+        console.log(`b: ${b}`)
+        console.log(`c: ${c}`)
+        console.log(`d: ${d}`)
+        console.log(`f: ${f}`)
+        // console.log(`e: ${e}`);  // e is not defined
+        console.log('f1 ends...')
+    }
+    function f2() {
+        var e = 50;
+        console.log('f2 starts...')
+        console.log(`a: ${a}`)
+        console.log(`b: ${b}`)
+        console.log(`c: ${c}`)
+        // console.log(`d: ${d}`); // d is not defined
+        console.log(`e: ${e}`)
+        console.log(`f: ${f}`)
+        console.log('f2 ends...')
+    }
+    f1();
+    f2();
+
+    // Note: any variable declared without using var/let/const is global variable
+</script>

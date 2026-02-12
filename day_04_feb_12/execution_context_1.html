@@ -1,0 +1,20 @@
+<script>
+    console.log('Global Code starts...');
+    console.log(`a: ${a}`); // undefined (javascript , during memory creation phase - Hoisting)
+    // console.log(`b: ${b}`); // b: <value unavailable> TDZ
+    // console.log(`c: ${c}`); // c: <value unavailable> TDZ
+    var a = 10;
+    let b = 20;   // after this line b can be used, TDZ ends for b here
+    const c = 30; // after this line c can be used, TDZ ends for c here
+    console.log(`a: ${a}`); // 10
+    console.log(`b: ${b}`);
+    console.log(`c: ${c}`);
+
+    function add(a, b) {
+        console.log(`Addition of ${a} and ${b} is ${a + b}`)
+    }
+    add(2, 3)
+
+    console.log('Global Code Ends...');
+
+</script>

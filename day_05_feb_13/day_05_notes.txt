@@ -32,6 +32,13 @@ prompt() : To Collect User input
 
 User Defined Functions  
 ======================
-1. Function Declaration
-2. Function Expression
+1. Function Declaration  (Named Function)
+2. Function Expression    (Anonymous Function)
 3. Arrow Function
+
+
+
+Function Declaration vs  Function Expression
+=============================================
+1. Function Declarations are named , Function Expressions are anonymous
+2. Function Declarations are hoisted, Function Expressions are not hoisted

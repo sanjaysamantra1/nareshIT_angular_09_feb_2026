@@ -8,8 +8,13 @@
 
     // Function Expression
     // sub(3, 2);  // Cannot access 'sub' before initialization
-    let sub = function (a, b) {
+    var sub = function (a, b) {
         console.log(`Subtraction of ${a} & ${b} is ${a - b}`)
     }
     sub(20, 10);
+
+    function mul(a, b) {
+        return a * b;
+    }
+    console.log((mul(10,20)))
 </script>

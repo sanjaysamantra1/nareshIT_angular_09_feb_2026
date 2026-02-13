@@ -1,0 +1,18 @@
+<script>
+    console.log('Global Code starts...');
+
+    console.log(`a: ${a}`); // during memory creation , a = undefined
+    console.log(`b: ${b}`); // Error , b : <value unavailable>
+    console.log(`c: ${c}`); // Error , c : <value unavailable>
+
+    var a = 10;
+    let b = 20;   // after this line b can be used, TDZ ends for b here
+    const c = 30; // after this line c can be used, TDZ ends for c here
+
+    console.log(`a: ${a}`);  // 10
+    console.log(`b: ${b}`);  // 20
+    console.log(`c: ${c}`);  // 30
+
+    console.log('Global Code Ends...');
+
+</script>

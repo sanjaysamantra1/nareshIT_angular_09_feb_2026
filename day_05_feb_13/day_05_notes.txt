@@ -1,0 +1,37 @@
+functions
+=========
+Re-usable block of code.
+
+1. pre-defined : console.log(), Math.max(), math.min()
+2. User Defined : simpleInterest()  (Developer write)
+
+
+
+
+Javascript Objects/Classes
+===========================
+console : log() , warn(), error(), table(), time(), timeEnd()
+document : write(), getElementById(), querySelector()
+window : alert(), prompt(), confirm(), atob() , btoa()
+Math : max(), min(), sqrt(), cbrt()
+Array : push(), pop(), splice(), slice()
+Object : assign(), keys(), values(), groupBy()
+JSON : stringify(), parse()
+
+
+window 
+======
+alert() : to display alert message 
+          Message + ok button
+confirm() : User Confirmation  
+             Message + Ok(true) , Cancel(false) 
+prompt() : To Collect User input
+           Message + InputBox + Ok,cancel                  
+
+
+
+User Defined Functions  
+======================
+1. Function Declaration
+2. Function Expression
+3. Arrow Function

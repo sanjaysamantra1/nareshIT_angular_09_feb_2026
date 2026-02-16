@@ -1,0 +1,36 @@
+Arrow functions
+===============
+-Shorter Syntax
+-implicit return ( return is not required)
+-body is optional
+-uses 'this' from the lexical/outer scope
+-'this' valus is static
+
+
+'this'
+=======
+'this' refers to the object that is executing the current function.
+
+Regular Function : this - How/where the function is being called
+Arrow Function : this - where the function is written ( lexical / outer )
+
+
+
+Arrow function Limitation
+==========================
+-Arrow functions should not be used as object methods
+
+
+Closure
+=======
+A closure is created when:
+    -An inner function remembers and access variables from its outer scope, even after outer function has finished execution
+-Closure is used 
+    a. Data Encapsulation
+    b. Factory Function
+
+
+Notes:
+-Closure scope is ctreated only for inner functions and not for outer functions
+-All the inner functions will have closure scope? NO
+-An inner function will have closure scope only if it is accessing outer function variable

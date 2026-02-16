@@ -1,0 +1,19 @@
+<script>
+    let obj = {
+        count: 0,
+        f1: function () {
+            console.log('f1....', this, this.count); // this = obj
+
+            function f2() {
+                console.log('f2....', this, this.count); // this = window
+            }
+            f2();
+
+            let f3 = () => {
+                console.log('f3....', this, this.count); // this = obj
+            }
+            f3();
+        }
+    }
+    obj.f1();
+</script>

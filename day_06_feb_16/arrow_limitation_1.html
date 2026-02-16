@@ -1,0 +1,19 @@
+<script>
+    let user = {
+        firstName: 'Virat',
+        lastName: 'Virat',
+
+        fullName1: function () {
+            console.log('fullName1: ', this); // this = user
+            console.log(this.firstName, this.lastName);
+        },
+        fullName2: () => {
+            console.log('fullName2: ', this); // this = window
+            console.log(this.firstName, this.lastName);
+        }
+    }
+    user.fullName1();
+    user.fullName2();
+
+    // Note : Arrow functions should not be used as object methods
+</script>

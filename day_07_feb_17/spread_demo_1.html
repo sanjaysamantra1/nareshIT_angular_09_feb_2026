@@ -1,0 +1,13 @@
+<script>
+    console.log(Math.max(10, 20, 30, 40)); // 40
+    console.log(Math.min(10, 20, 30, 40)); // 10
+
+    let arr = [10, 20, 30, 40];
+    console.log(Math.max(arr)); // NaN
+    console.log(Math.min(arr)); // NaN
+    // max() min() expect individual numbers as arg , not array
+
+    // ...arr   breaks the array and passes each value as arguement to max()
+    console.log(Math.max(...arr));
+    console.log(Math.min(...arr));
+</script>

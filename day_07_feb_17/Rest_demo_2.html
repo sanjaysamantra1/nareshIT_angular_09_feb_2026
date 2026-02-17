@@ -1,0 +1,13 @@
+<script>
+    function RestDemo(a, b, ...c) {  // a=10  b=20 c=[30, 40, 50] 
+        console.log(a, b, c);
+    }
+    RestDemo(10, 20, 30, 40, 50);
+
+
+    // Rest parameter must be last formal parameter
+    /* function RestDemo(a, ...b, c) {
+        console.log(a, b, c);
+    }
+    RestDemo(10, 20, 30, 40, 50); */
+</script>

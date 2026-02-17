@@ -1,0 +1,18 @@
+ES_6   Beyond
+==============
+1. Template Literals
+2. let & const 
+3. arrow function 
+4. exponent operator
+5. optional chaining  ?.
+6. default param value
+7. REST param
+8. Spread Operator
+9. de-structuring  ( object , array )
+
+
+
+REST Param   Vs  Spread 
+========================
+when ... are used as function param , that is REST param
+Rest all places , its Spread

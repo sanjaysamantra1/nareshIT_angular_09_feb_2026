@@ -1,0 +1,21 @@
+<script>
+    // only 1 i variable(Global) is created and i value is updated i=1/2/3/4/5/6
+    // 6   6   6    6    6
+    for (var i = 1; i <= 5; i++) {
+        function printIvalue() {
+            console.log(i)
+        }
+        setTimeout(printIvalue, 1000 * i);
+        console.dir(printIvalue)
+    }
+
+
+    // for each iteration a new J variable(block scoped) is declared 
+    /* for (let j = 1; j <= 5; j++) {
+        function printJvalue() {
+            console.log(j)
+        }
+        setTimeout(printJvalue, 1000 * j);
+        console.dir(printJvalue)
+    } */
+</script>

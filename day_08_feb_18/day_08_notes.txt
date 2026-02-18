@@ -1,0 +1,36 @@
+ES_6  and Beyond
+=================
+-Array De-Structuring
+-for-in  & for-of loop
+-Enhanced Object Literal
+-Set 
+-Map
+
+
+
+Set 
+====
+-A Set is a Javascript Object that stores unique values.
+-Set can be iterated using loop,forEach()
+-Set Properties:
+	No Duplicate Values
+	Maintains Insertion Order
+	Can store any data type
+	No indexing
+-When To Use Set:
+	Remove Duplicates easily
+	Fast lookups (O(1))
+
+
+
+Map
+===
+-Map is a collection that stores data in key-value format.
+-Map Properties:
+	Keys can be of any datatype, values can be of any datatype
+	Keys are unique
+	Insertion Order is preserved
+Why Do We need Map:
+	When keys are not strings
+	For Dynamic key-value data
+	Faster

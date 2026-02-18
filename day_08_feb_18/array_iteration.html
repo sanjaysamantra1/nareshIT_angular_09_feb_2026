@@ -1,0 +1,20 @@
+<script>
+    var cars = ['Tata', 'Honda', 'Maruti', 'Hyundai'];
+
+    // ES_5
+    for (var i = 0; i < cars.length; i++) {
+        console.log(cars[i])
+    }
+    console.log('==========')
+
+    // ES_6  for-in
+    for (i in cars) {
+        console.log(cars[i])
+    }
+    console.log('==========')
+
+    // ES_6 for-of
+    for (car of cars) {
+        console.log(car);
+    }
+</script>

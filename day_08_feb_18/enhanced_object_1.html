@@ -1,0 +1,27 @@
+<script>
+
+    let user = {
+        firstName: 'virat',
+        lastName: 'kohli',
+        fullname1: function () { // ES_5
+            console.log(this.firstName, this.lastName)
+        },
+        fullname2() { // ES_6
+            console.log(this.firstName, this.lastName)
+        }
+    }
+    user.fullname1()
+    user.fullname2()
+
+
+    function creatLaptop(brand, model, price, processor) {
+        /* return { // ES_5
+            brand: brand,
+            model: model,
+            price: price,
+            processor: processor,
+        } */
+       return {brand, model, price, processor}; // ES_6
+    }
+    console.log(creatLaptop('HP', 'ProBook', 50000, 'Intel'))
+</script>

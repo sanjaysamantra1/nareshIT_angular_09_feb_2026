@@ -1,0 +1,28 @@
+<script>
+    // display char count {e:n,n:3,t:2,r:1....}
+    let str = 'entertainment';
+
+    // using Obj
+    let resultObj = {};
+    for (char of str) {
+        if (resultObj[char]) {
+            resultObj[char] = resultObj[char] + 1;
+        } else {
+            resultObj[char] = 1;
+        }
+    }
+    console.log(resultObj);
+
+
+    // using Map
+    let resultMap = new Map()
+    for (char of str) {
+        if (resultMap.has(char)) { // char is already present
+            const existingValue = resultMap.get(char);
+            resultMap.set(char, existingValue + 1);
+        } else { // char not yet present
+            resultMap.set(char, 1);
+        }
+    }
+    console.log(resultMap);
+</script>

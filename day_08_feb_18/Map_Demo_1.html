@@ -1,0 +1,33 @@
+<script>
+    let userMap = new Map();
+
+    // Add data to Map
+    userMap.set('name', 'Sanjay');
+    userMap.set('age', 50);
+    userMap.set('address', 'Bangalore');
+    userMap.set('role', 'Trainer');
+
+    // get a value
+    console.log('address: ', userMap.get('address'))
+
+    // display map data
+    console.log('userMap: ', userMap);
+
+    // check the size 
+    console.log('size : ', userMap.size);
+
+    // check if a key present?
+    console.log(userMap.has('name')); // true
+    console.log(userMap.has('age')); // true
+    console.log(userMap.has('dob')); // false
+
+    // Delete 1 item
+    userMap.delete('age');
+
+    console.log('userMap After Delete: ', userMap);
+
+    // Delete All Items
+    userMap.clear();
+
+    console.log('userMap After clear: ', userMap);
+</script>

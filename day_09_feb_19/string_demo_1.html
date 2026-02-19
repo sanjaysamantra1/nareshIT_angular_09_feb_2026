@@ -1,0 +1,28 @@
+<script>
+    let str = 'Javascript';
+
+    console.log('Length: ', str.length);
+    console.log('Uppercase: ', str.toUpperCase());
+    console.log('Lowercase: ', str.toLowerCase());
+
+    console.log('char at index 2: ', str[2])
+    console.log('char at index 2: ', str.charAt(2))
+    console.log('char at index 2: ', str.at(2))
+
+    // at() works with both +ve and -ve index
+    console.log('char at index 2: ', str[-2])
+    console.log('char at index 2: ', str.charAt(-2))
+    console.log('char at index 2: ', str.at(-2))
+
+    console.log('Ascci code of the char present at index 1 ', str.charCodeAt(1)); // a = 97
+
+    console.log('Virat '.concat('Kohli'));
+    let base_url = 'https://jsonplaceholder.typicode.com/';
+    let resource = 'comments';
+    let final_url = base_url.concat(resource);
+    console.log(final_url)
+    let final_url2 = `${base_url}${resource}`;
+    console.log(final_url2)
+
+    
+</script>

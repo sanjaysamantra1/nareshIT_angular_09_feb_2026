@@ -1,0 +1,13 @@
+<script>
+    let str = 'entertainment'; // R
+
+    for (char of str) { // char = e / n / t
+        let a = str.indexOf(char);
+        let b = str.lastIndexOf(char);
+        console.log(char, a, b)
+        if (a == b) {
+            console.log('Non repeated Char: ', char);
+            break;
+        }
+    }
+</script>

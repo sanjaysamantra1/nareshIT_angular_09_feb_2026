@@ -1,0 +1,40 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai'];
+
+    // what valus is at index 2
+    console.log('car at index 2 :', cars.at(2)); // Maruti
+
+    // at what index 'Maruti' is present?
+    console.log('index where maruti is stored: ', cars.indexOf('Maruti')); // 2
+
+
+    let employees = [
+        { id: 1, name: 'Amit Sharma', role: 'Manager', salary: 85000, status: 'Active', gender: 'male' },
+        { id: 2, name: 'Priya Verma', role: 'Developer', salary: 65000, status: 'Active', gender: 'female' },
+        { id: 3, name: 'Rahul Mehta', role: 'Tester', salary: 38000, status: 'Inactive', gender: 'male' },
+        { id: 4, name: 'Sneha Iyer', role: 'Developer', salary: 42000, status: 'Inactive', gender: 'female' },
+        { id: 5, name: 'Karan Singh', role: 'Manager', salary: 52000, status: 'Active', gender: 'male' },
+        { id: 6, name: 'Neha Gupta', role: 'Tester', salary: 72000, status: 'Active', gender: 'female' }
+    ];
+    // display first female employee data
+    let first_female_emp = employees.find((emp) => emp.gender == 'female');
+    console.log('first_female_emp: ', first_female_emp);
+
+    // at what index  first female employee is present
+    // findIndex() helps, indexOf() doesn't work with array of objects
+    let ind_first_female_emp = employees.findIndex((emp) => emp.gender == 'female');
+    console.log('ind_first_female_emp: ', ind_first_female_emp);
+
+    // display last female employee data
+    let last_female_emp = employees.findLast((emp) => emp.gender == 'female');
+    console.log('last_female_emp: ', last_female_emp);
+
+    // at what index  last female employee is present
+    // findLastIndex() helps, lastIndexOf() doesn't work with array of objects
+    let ind_last_female_emp = employees.findLastIndex((emp) => emp.gender == 'female');
+    console.log('ind_last_female_emp: ', ind_last_female_emp);
+
+    // display all the female 
+    let all_female_emps = employees.filter((emp) => emp.gender == 'female');
+    console.log('all_female_emps: ', all_female_emps)
+</script>

@@ -1,0 +1,33 @@
+<script>
+    let arr = [10, 20, 30];
+
+    console.log(arr);      // [10, 20,30]
+    arr.push(40, 50);      // [10, 20, 30, 40,50]
+    console.log('after push: ', arr);
+
+    arr.pop();
+    console.log('after pop: ', arr);  // [10, 20,30,40]
+
+    arr.unshift(50);
+    console.log('after unshift: ', arr); // [50, 10, 20, 30, 40]
+
+    arr.shift();
+    console.log('after shift: ', arr);  // [ 10, 20,30,40]
+
+
+    // splice(index,#elements to delete,elements to add)
+    // only delete , only add, both delete & add
+    arr.splice(1, 2);
+    console.log('After SPlice-1 : ', arr); // [10, 40]
+
+    arr.splice(1, 0, 20, 30);
+    console.log('After SPlice-2 : ', arr); // [10, 20,30, 40]
+
+    arr.splice(1, 2, 25, 35);
+    console.log('After SPlice-3 : ', arr); // [10, 25, 35, 40]
+
+    let cars = ['Tata', 'Honda', 'Maruti'];
+    let newCars = cars.toSpliced(1, 2, 'Mahindra');
+    console.log(cars)
+    console.log(newCars)
+</script>

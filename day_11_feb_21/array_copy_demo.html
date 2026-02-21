@@ -1,0 +1,29 @@
+<script>
+   let arr1 = [10, 20];
+   let arr2 = arr1; // Referrence Copy / address Copy
+   // A new array is not being created, the same array address is stored in both arr1 & arr2
+   arr1.push(30);
+   arr2.push(40);
+   console.log('arr1: ', arr1);  // [10, 20, 30, 40]
+   console.log('arr2: ', arr2);  // [10, 20, 30, 40]
+
+
+   let arr3 = [10, 20, [30, 31]];
+   let arr4 = [...arr3]; // Spread Operator : Shallow Copy : value copy
+   // a new array is created, all the values from arr3 are copied to arr4
+   arr3.push(40, 50);
+   arr3[2].push(32, 33);
+   console.log('arr3: ', arr3);   //  [10, 20, [30, 31, 32, 33],40,50]
+   console.log('arr4: ', arr4);   //  [10, 20, [30, 31, 32, 33]]
+   //  Shallow Copy : only top level elements are copied by value, nested elements are copied by reference
+   // if we dont have nested array, shallow copy is fine
+
+
+   let arr5 = [10, 20, [30, 31]];
+   let arr6 = structuredClone(arr5); // structuredClone : Deep Copy : value copy
+   // a new array is created, all the values(nested array values also) from arr5 are copied to arr6
+   arr5.push(40, 50);
+   arr5[2].push(32, 33);
+   console.log('arr5: ', arr5);   //  [10, 20, [30, 31, 32, 33],40,50]
+   console.log('arr6: ', arr6);   //  [10, 20, [30, 31]]
+</script>

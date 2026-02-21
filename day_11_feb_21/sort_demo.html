@@ -1,0 +1,21 @@
+<script>
+   let arr = [20, 50, 10, 40, 30];
+   arr.sort();
+   console.log(arr);
+
+   let arr2 = [105, 110, 120, 150, 7, 8, 9, 91, 81, 51, 10];
+   arr2.sort();   // string sort   
+   console.log(arr2);
+
+
+   arr2.sort((a, b) => {
+      // console.log(a, b)
+      return b - a;
+   });  // asc
+   console.log(arr2);
+
+
+   // Numeric Sort :  sort(compareFn)
+   arr2.sort((a, b) => a - b);  // asc
+   console.log(arr2);
+</script>

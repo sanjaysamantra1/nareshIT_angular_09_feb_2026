@@ -1,0 +1,15 @@
+<script>
+   // every() - All true
+   let arr = [10, 12, 14, 16, 18, 19];
+   let all_even = arr.every(ele => ele % 2 == 0);
+   console.log('all_even: ', all_even)
+
+   // some() - atleast 1 true
+   let atleast_one_even = arr.some(ele => ele % 2 == 0);
+   console.log('atleast_one_even: ', atleast_one_even);
+
+
+   const form = ['name','email','phone','','age','address'];
+   const all_filled = form.every(field=>field);
+   console.log(all_filled)
+</script>

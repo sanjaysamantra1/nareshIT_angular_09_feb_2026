@@ -23,4 +23,3 @@ Prototype
 -share properties and methods.
 -if a direct property exists(clgName) with the same name in prototype(clgName)
  direct property take precedence
--

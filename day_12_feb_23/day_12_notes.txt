@@ -1,0 +1,26 @@
+Class & Object
+===============
+Class : structure/blueprint/template for objects
+        doesn't have  physical existance  
+ 
+Object : Every physical entity of  a class
+         has physical existance
+
+
+class : contains set of variables/properties & methods
+
+
+Class
+======
+ES_5 : constructor function
+ES_6 : class keyword
+
+
+
+Prototype
+=========
+-Every javascript object has a hidden property , prototype.
+-share properties and methods.
+-if a direct property exists(clgName) with the same name in prototype(clgName)
+ direct property take precedence
+-

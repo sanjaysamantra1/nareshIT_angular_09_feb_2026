@@ -1,0 +1,21 @@
+<script>
+    class Employee {
+        constructor(eid, firstName, lastName, sal) {
+            this.eid = eid;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sal = sal;
+        }
+        fullName() {
+            console.log(this.firstName + this.lastName)
+        }
+        yearlySal() {
+            console.log(this.sal * 12);
+        }
+    }
+    let emp1 = new Employee('e101', 'Ajit', 'Panda', 4000);
+    console.log(emp1)
+
+    emp1.fullName();
+    emp1.yearlySal();
+</script>

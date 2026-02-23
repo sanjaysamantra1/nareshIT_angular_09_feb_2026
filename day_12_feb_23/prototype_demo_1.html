@@ -1,0 +1,26 @@
+<script>
+    // ES_6
+    class Student {
+        constructor(roll, name, add, course) {  // 4 * 100 = 400
+            this.roll = roll;
+            this.name = name;
+            this.add = add;
+            this.course = course;
+            // this.clgName = 'NareshIT';
+            // this.clgAdd = 'Ameerpet,Hyderabad';
+        }
+    }
+    Student.prototype.clgName = 'NareshIT';
+    Student.prototype.clgAdd = 'Ameerpet,Hyderabad';
+
+    let std1 = new Student(1, 'Amrit', 'hyderabad', 'Angular');
+    let std2 = new Student(2, 'Mastan', 'pune', 'React');
+    console.log(std1)
+    console.log(std2);
+
+    console.log(std1.roll, std1.name, std1.course, std1.clgName, std1.clgAdd);
+
+    std1.clgAdd = 'KPHB, Hyderabad'; // it adds a new property in std1
+    console.log(std1.roll, std1.name, std1.course, std1.clgName, std1.clgAdd);
+    console.log(std2.roll, std2.name, std2.course, std2.clgName, std2.clgAdd);
+</script>

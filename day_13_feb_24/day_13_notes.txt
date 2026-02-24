@@ -1,0 +1,53 @@
+Module
+======
+-A module is a file that contains re-usable code & can export variables, functions , classes so that other files can import and use them.
+-Code Organization , Reusability, avoid global scope
+-Module Systems : CommonJS(CJS) , ECMAScript(ESM)
+
+CommonJS
+--------
+-This module system is commonly used in NodeJS
+To export : module.exports
+To Import : require()
+
+ESM
+---
+-This Module system is used by angular, react
+To export : export
+To Import : import
+
+2 types of export/import:
+    a. default export
+    b. named export 
+
+Ex:
+import MyReact, { Component } from 'react';
+
+
+Default vs Named export
+=======================
+-we can have maximum 1 default export per file , we can have many named exports
+-default export member can be imported with any name, but named exports are not
+-default exported cann't be used with variables
+
+
+
+
+How javascript executes Synchronous and Async Code
+===================================================
+heap : is the area where all the variables are stored.
+
+callStack : callstack keeps track of global & function execution
+
+-Regular functions can go to callstack directly for execution
+-callback function(promise,setTimeout) cann't go to callstack directly, they have to wait in a queue
+
+-MicroTask Queue : Promise , mutationobserver, queueMicrotask
+
+-MacroTask Queue : setTimeout, setInterval
+
+EventLoop - checks callstack and queue
+            decides when async callback functions will go to callstack for execution
+
+
+To debug code : https://www.jsv9000.app/            

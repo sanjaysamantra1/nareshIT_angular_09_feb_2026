@@ -1,0 +1,78 @@
+<script>
+    function loginUser(username) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log('User Logged in');
+                resolve({ id: 1, username })
+            }, 1000);
+        });
+    }
+    function fetchUserProfile(userId) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log('Profile fetched');
+                resolve({ userId, name: 'Sanjay', phone: 1234512345 })
+            }, 1000);
+        });
+    }
+    function fetchCart(userId) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log('Cart fetched');
+                resolve({ items: ['laptop', 'mouse'], total: 1200 })
+            }, 1000);
+        });
+    }
+    function makePayment(userId) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log('Payment successful');
+                resolve({ paymentId: 'pay123', status: 'success' })
+            }, 1000);
+        });
+    }
+    function sendConfirmation(userId) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                console.log('Confirmation mail sent');
+                resolve()
+            }, 1000);
+        });
+    }
+
+    /* Realtime Usecase
+    ================
+    1. login user
+    2. fetch user profile
+    3. fetch cart
+    4. make payment
+    5. send confirmation */
+
+    /*  loginUser('sanjay', function (user) {  // callback hell
+         fetchUserProfile(user.id, function (profile) {
+             fetchCart(profile.id, function (cart) {
+                 makePayment(cart, function (payment) {
+                     sendConfirmation(payment, function () {
+                         console.log('Complete Order flow is done')
+                     })
+                 })
+             })
+         })
+     }); */
+
+    console.log('Before Order Flow starts')
+    
+    async function orderFlow() { // async
+        const user = await loginUser('sanjay');
+        const profile = await fetchUserProfile(user.id);
+        const cart = await fetchCart(user.id);
+        const payment = await makePayment(cart);
+        await sendConfirmation();
+        console.log('Complete Order flow is done')
+    }
+    orderFlow()
+
+    console.log('After Order Flow starts');
+
+    // 500 lines code - will not be waiting for order flow to complete
+</script>

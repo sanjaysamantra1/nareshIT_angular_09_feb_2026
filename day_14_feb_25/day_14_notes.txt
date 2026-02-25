@@ -1,0 +1,29 @@
+CallBack , Promise , Async Await
+=================================
+-A function is passed as an arguement to another function.
+-we want that callback function to execute later when 1 operation is done.
+
+CallBack Hell - writing callback inside callback
+    Nested structure, difficult to understand, difficult to maintain
+
+Solutions: Promise , Async-await
+
+
+
+Promise:
+========
+-an object that represents the future value of an asynchronous operation
+-A promise says - 'i will give you a result later'
+-Promise State : pending , resolved, rejected
+
+how to get data from a promise : 1. then()   2. async-await
+
+
+Realtime Usecase
+================
+1. login user
+2. fetch user profile
+3. fetch cart
+4. make payment
+5. send confirmation
+

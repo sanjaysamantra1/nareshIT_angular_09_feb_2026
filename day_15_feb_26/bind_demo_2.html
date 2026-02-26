@@ -1,0 +1,18 @@
+<script>
+    class Student {
+        firstName = 'Virat';
+        lastName = 'Kohli';
+
+        fullName() { // this = Student/window
+            console.log(this.firstName, this.lastName);
+            console.log(this)
+        }
+    }
+    let stdObj = new Student();
+    stdObj.fullName(); // inside fullName() , this = Student
+
+    setTimeout(stdObj.fullName, 4000 );
+    
+    
+    setTimeout(stdObj.fullName.bind(stdObj), 8000 );
+</script>

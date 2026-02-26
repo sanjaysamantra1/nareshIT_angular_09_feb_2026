@@ -1,0 +1,11 @@
+<script>
+    function add(a, b) {
+        console.log(this, a, b);
+        console.log(this.num + a + b); // NaN , undefined + 10 + 20
+    }
+    add(10, 20);
+
+    let obj1 = { num: 5 };
+    add.call(obj1, 10, 20);
+    // invoke add(10, 20) , inside add() make sure this = obj1
+</script>

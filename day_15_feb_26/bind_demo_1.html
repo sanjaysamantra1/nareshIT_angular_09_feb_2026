@@ -1,0 +1,16 @@
+<script>
+    function add(a, b) {
+        console.log(this.num + a + b);
+    }
+    add(10, 20);
+
+    let obj1 = { num: 5 };
+    add.call(obj1, 10, 20);
+    add.call(obj1, 20, 30);
+    add.call(obj1, 30, 40);
+
+    let sum = add.bind(obj1); // add() + this = obj1
+    sum(10, 20);
+    sum(20, 30);
+    sum(30, 40);
+</script>
